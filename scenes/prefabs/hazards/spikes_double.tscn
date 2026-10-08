@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bp62d2e6ukmrs"]
+
+[ext_resource type="Script" uid="uid://3ugbvq1iadqi" path="res://scenes/prefabs/hazards/spikes_double.gd" id="1_hlpjn"]
+[ext_resource type="Texture2D" uid="uid://wmoyejtjsmhh" path="res://assets/game/obstacles/spikes_double.png" id="1_texture"]
+
+[sub_resource type="RectangleShape2D" id="Shape_spikes"]
+size = Vector2(12, 6)
+
+[node name="SpikesDouble" type="Area2D" unique_id=1852047613 groups=["hazard"]]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_hlpjn")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2071636633]
+texture_filter = 1
+texture = ExtResource("1_texture")
+
+[node name="DetectionArea" type="CollisionShape2D" parent="." unique_id=482128974]
+position = Vector2(0, 6)
+shape = SubResource("Shape_spikes")

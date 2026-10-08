@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dfxaxy21qasq7"]
+
+[ext_resource type="PackedScene" uid="uid://dldd1qd4cpsu1" path="res://scenes/Game Over Screen.tscn" id="1_ghj5q"]
+[ext_resource type="Script" uid="uid://bvtlsj5cc7rh1" path="res://gamestartscreen.gd" id="2_ek3oe"]
+
+[node name="CanvasLayer" unique_id=666362537 instance=ExtResource("1_ghj5q")]
+script = ExtResource("2_ek3oe")
+
+[node name="Label" parent="ColorRect/VBoxContainer" parent_id_path=PackedInt32Array(523094489) index="0" unique_id=1627103144]
+text = "GAME START"
+
+[node name="Button" parent="ColorRect/VBoxContainer" parent_id_path=PackedInt32Array(523094489) index="1" unique_id=1316394846]
+text = "开始游戏"
+
+[node name="Label2" type="Label" parent="ColorRect/VBoxContainer" parent_id_path=PackedInt32Array(523094489) index="2" unique_id=934949802]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.18039216, 0.101960786, 1)
+theme_override_font_sizes/font_size = 11
+text = "         (拿到所有金币才能通关哦)"
+
+[node name="Label" type="Label" parent="." index="1" unique_id=637958315]
+offset_left = 232.0
+offset_top = 196.0
+offset_right = 594.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0.56078434, 0.8862745, 0.76862746, 1)
+theme_override_font_sizes/font_size = 10
+text = "共三滴血，踩中陷阱掉一滴血，血量为0后角色死亡
+技能键：鼠标右键为冲刺键
+角色在地面起跳可实现二段跳
+蓝钻可选择性拿取,拿取为完美通关，否则为普通通关"

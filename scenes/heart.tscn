@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cfwb06yntrgy4"]
+
+[ext_resource type="Script" uid="uid://bkv8mqnse7lb" path="res://heart.gd" id="1_krgnv"]
+[ext_resource type="Texture2D" uid="uid://b7l4qmvfhgcqt" path="res://assets/kenney/tiles/tile_0044.png" id="2_txm48"]
+[ext_resource type="Texture2D" uid="uid://b7hkld21qp56x" path="res://assets/kenney/tiles/tile_0046.png" id="3_8nnyc"]
+
+[node name="Heart" type="Control" unique_id=1080693170 groups=["heart"]]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_krgnv")
+
+[node name="RedHeart" type="Sprite2D" parent="." unique_id=1309387112]
+texture = ExtResource("2_txm48")
+
+[node name="GreyHeart" type="Sprite2D" parent="." unique_id=326625999]
+texture = ExtResource("3_8nnyc")

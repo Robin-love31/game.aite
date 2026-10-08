@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dnv8v0gcolu2s"]
+
+[ext_resource type="Script" uid="uid://cbh3alwjyg4u0" path="res://button.gd" id="1_nhxoo"]
+[ext_resource type="Texture2D" uid="uid://dxhrjf4pn67cm" path="res://assets/kenney/tiles/tile_0148.png" id="2_5ieuq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i4vq1"]
+radius = 6.0827627
+
+[node name="Area2D" type="Area2D" unique_id=1082671960]
+script = ExtResource("1_nhxoo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=983057368]
+texture = ExtResource("2_5ieuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1236927010]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_i4vq1")

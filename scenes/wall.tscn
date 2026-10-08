@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cjnti3c64440r"]
+
+[ext_resource type="Script" uid="uid://cwscqat6pbt7d" path="res://scenes/wall.gd" id="1_2ktk7"]
+[ext_resource type="Texture2D" uid="uid://b2yvbmmhkc5o1" path="res://assets/kenney/tiles/tile_0122.png" id="2_e00m8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o71ss"]
+size = Vector2(18, 36)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1988695003]
+script = ExtResource("1_2ktk7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=972990033]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_o71ss")
+
+[node name="Tile0122" type="Sprite2D" parent="." unique_id=1322187412]
+position = Vector2(0, 1)
+texture = ExtResource("2_e00m8")
+
+[node name="Tile0123" type="Sprite2D" parent="." unique_id=866687671]
+position = Vector2(0, 19)
+texture = ExtResource("2_e00m8")
